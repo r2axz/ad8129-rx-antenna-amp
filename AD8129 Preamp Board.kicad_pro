@@ -345,9 +345,7 @@
     "pinned_footprint_libs": [
       "AD8129 Preamp Board"
     ],
-    "pinned_symbol_libs": [
-      "AD8129 Preamp Board"
-    ]
+    "pinned_symbol_libs": []
   },
   "meta": {
     "filename": "AD8129 Preamp Board.kicad_pro",
