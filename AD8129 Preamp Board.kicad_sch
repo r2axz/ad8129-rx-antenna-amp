@@ -1620,7 +1620,7 @@
     (property "Value" "220uH" (id 1) (at 229.87 70.4849 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 228.6 69.215 0)
+    (property "Footprint" "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder" (id 2) (at 228.6 69.215 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 228.6 69.215 0)
@@ -1864,7 +1864,7 @@
     (uuid 7735ef7e-0d05-4ae5-b498-7db60adee0e6)
     (property "Reference" "L1" (id 0) (at 152.4 37.465 90))
     (property "Value" "220uH" (id 1) (at 152.4 40.005 90))
-    (property "Footprint" "" (id 2) (at 152.4 43.815 0)
+    (property "Footprint" "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder" (id 2) (at 152.4 43.815 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 152.4 43.815 0)
@@ -1987,7 +1987,7 @@
     (uuid b6864b4f-d329-4382-9e55-67de1bf05f05)
     (property "Reference" "L2" (id 0) (at 152.4 120.015 90))
     (property "Value" "220uH" (id 1) (at 152.4 122.555 90))
-    (property "Footprint" "" (id 2) (at 152.4 125.095 0)
+    (property "Footprint" "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder" (id 2) (at 152.4 125.095 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 152.4 125.095 0)
@@ -2392,16 +2392,16 @@
       (reference "J3") (unit 1) (value "Conn_01x01_Female") (footprint "")
     )
     (path "/7735ef7e-0d05-4ae5-b498-7db60adee0e6"
-      (reference "L1") (unit 1) (value "220uH") (footprint "")
+      (reference "L1") (unit 1) (value "220uH") (footprint "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder")
     )
     (path "/b6864b4f-d329-4382-9e55-67de1bf05f05"
-      (reference "L2") (unit 1) (value "220uH") (footprint "")
+      (reference "L2") (unit 1) (value "220uH") (footprint "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder")
     )
     (path "/8146b11a-fccb-48a7-bcaa-9e1b77e1c86b"
       (reference "L3") (unit 1) (value "1mH") (footprint "")
     )
     (path "/4886c859-4e3e-44ea-8304-93581e52b72f"
-      (reference "L4") (unit 1) (value "220uH") (footprint "")
+      (reference "L4") (unit 1) (value "220uH") (footprint "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder")
     )
     (path "/827c9052-7417-4998-8820-0ee4048dfc60"
       (reference "R1") (unit 1) (value "100k") (footprint "AD8129 Preamp Board:R_0805_2012Metric")
