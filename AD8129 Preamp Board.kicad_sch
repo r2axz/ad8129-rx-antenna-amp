@@ -1523,10 +1523,10 @@
   )
 
   (symbol (lib_id "AD8129 Preamp Board:AD8129") (at 144.78 78.105 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid 23ca2cb0-3422-4d12-ac8b-2c3f9709b23a)
-    (property "Reference" "U1" (id 0) (at 161.29 73.7743 0))
-    (property "Value" "AD8129" (id 1) (at 161.29 76.3143 0))
+    (property "Reference" "U1" (id 0) (at 153.67 71.12 0))
+    (property "Value" "AD8129" (id 1) (at 153.67 84.455 0))
     (property "Footprint" "" (id 2) (at 129.54 75.565 0)
       (effects (font (size 1.27 1.27)) hide)
     )
