@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "AD8129 Preamp Board")
+    (date "2022-07-06")
+    (rev "1")
+  )
+
   (lib_symbols
     (symbol "AD8129 Preamp Board:AD8129" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -6.35 15.875 0)
