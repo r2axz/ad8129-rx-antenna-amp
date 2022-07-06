@@ -1691,7 +1691,7 @@
     (property "Value" "TRX" (id 1) (at 246.38 91.7331 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 242.57 90.17 0)
+    (property "Footprint" "AD8129 Preamp Board:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount" (id 2) (at 242.57 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (id 3) (at 242.57 90.17 0)
@@ -2368,7 +2368,7 @@
     (uuid f7ad2744-8981-4b98-a696-86b5a0e44036)
     (property "Reference" "T1" (id 0) (at 184.1627 85.09 0))
     (property "Value" "Transformer_1P_1S" (id 1) (at 184.1627 87.63 0))
-    (property "Footprint" "" (id 2) (at 184.15 95.25 0)
+    (property "Footprint" "AD8129 Preamp Board:TR-FT-50-43-1P-1S-Isolated" (id 2) (at 184.15 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 184.15 95.25 0)
@@ -2543,7 +2543,7 @@
       (reference "J2") (unit 1) (value "TUNE") (footprint "AD8129 Preamp Board:WirePad_1_0.8_1.5")
     )
     (path "/45c4b5cd-ee34-40a1-ad17-465c5c808423"
-      (reference "J3") (unit 1) (value "TRX") (footprint "")
+      (reference "J3") (unit 1) (value "TRX") (footprint "AD8129 Preamp Board:SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount")
     )
     (path "/7735ef7e-0d05-4ae5-b498-7db60adee0e6"
       (reference "L1") (unit 1) (value "220uH") (footprint "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder")
@@ -2582,7 +2582,7 @@
       (reference "R8") (unit 1) (value "47") (footprint "AD8129 Preamp Board:R_0805_2012Metric")
     )
     (path "/f7ad2744-8981-4b98-a696-86b5a0e44036"
-      (reference "T1") (unit 1) (value "Transformer_1P_1S") (footprint "")
+      (reference "T1") (unit 1) (value "Transformer_1P_1S") (footprint "AD8129 Preamp Board:TR-FT-50-43-1P-1S-Isolated")
     )
     (path "/23ca2cb0-3422-4d12-ac8b-2c3f9709b23a"
       (reference "U1") (unit 1) (value "AD8129") (footprint "AD8129 Preamp Board:SOIC-8_3.9x4.9mm_P1.27mm")
