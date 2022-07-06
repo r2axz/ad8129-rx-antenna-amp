@@ -1545,7 +1545,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 229.87 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 070fb985-d30c-4781-a72a-a90cb6950444)
-    (property "Reference" "#FLG0103" (id 0) (at 229.87 51.435 0)
+    (property "Reference" "#FLG04" (id 0) (at 229.87 51.435 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (id 1) (at 229.87 48.26 0))
@@ -1601,7 +1601,7 @@
     (uuid 0a2d9ea1-26b2-42a6-bbbe-a3f042fb6f34)
     (property "Reference" "J1" (id 0) (at 41.275 76.2 0))
     (property "Value" "ANT" (id 1) (at 41.275 78.74 0))
-    (property "Footprint" "AD8129 Preamp Board:CONN-3" (id 2) (at 40.64 83.82 0)
+    (property "Footprint" "AD8129 Preamp Board:WirePad_3_0.8_1.5" (id 2) (at 40.64 83.82 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 40.64 83.82 0)
@@ -1967,7 +1967,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 147.32 139.7 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 7cdeac05-e4be-462c-8716-03765a1d8065)
-    (property "Reference" "#FLG0101" (id 0) (at 147.32 141.605 0)
+    (property "Reference" "#FLG01" (id 0) (at 147.32 141.605 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (id 1) (at 149.86 140.9699 0)
@@ -1991,7 +1991,7 @@
     (property "Value" "1mH" (id 1) (at 224.79 82.5499 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 223.52 81.28 0)
+    (property "Footprint" "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder" (id 2) (at 223.52 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 223.52 81.28 0)
@@ -2093,7 +2093,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 149.86 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid acd7bd34-0f26-4375-82af-9fc9101d2bb8)
-    (property "Reference" "#FLG0102" (id 0) (at 149.86 73.025 0)
+    (property "Reference" "#FLG02" (id 0) (at 149.86 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (id 1) (at 149.86 69.85 0))
@@ -2217,7 +2217,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 208.28 77.47 180) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d66c5b4c-fcad-46bc-9a52-789856b29f0b)
-    (property "Reference" "#FLG0104" (id 0) (at 208.28 79.375 0)
+    (property "Reference" "#FLG03" (id 0) (at 208.28 79.375 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (id 1) (at 210.82 78.7399 0)
@@ -2298,7 +2298,7 @@
     (property "Value" "TUNE" (id 1) (at 237.49 111.7599 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 236.22 110.49 0)
+    (property "Footprint" "AD8129 Preamp Board:WirePad_1_0.8_1.5" (id 2) (at 236.22 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 236.22 110.49 0)
@@ -2438,16 +2438,16 @@
 
   (symbol_instances
     (path "/7cdeac05-e4be-462c-8716-03765a1d8065"
-      (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
+      (reference "#FLG01") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/acd7bd34-0f26-4375-82af-9fc9101d2bb8"
-      (reference "#FLG0102") (unit 1) (value "PWR_FLAG") (footprint "")
-    )
-    (path "/070fb985-d30c-4781-a72a-a90cb6950444"
-      (reference "#FLG0103") (unit 1) (value "PWR_FLAG") (footprint "")
+      (reference "#FLG02") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/d66c5b4c-fcad-46bc-9a52-789856b29f0b"
-      (reference "#FLG0104") (unit 1) (value "PWR_FLAG") (footprint "")
+      (reference "#FLG03") (unit 1) (value "PWR_FLAG") (footprint "")
+    )
+    (path "/070fb985-d30c-4781-a72a-a90cb6950444"
+      (reference "#FLG04") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/c7ae8597-5a59-42cd-8bba-a46955e5aefc"
       (reference "#PWR01") (unit 1) (value "GND") (footprint "")
@@ -2537,10 +2537,10 @@
       (reference "D8") (unit 1) (value "1N4148W") (footprint "AD8129 Preamp Board:D_SOD-123")
     )
     (path "/0a2d9ea1-26b2-42a6-bbbe-a3f042fb6f34"
-      (reference "J1") (unit 1) (value "ANT") (footprint "AD8129 Preamp Board:CONN-3")
+      (reference "J1") (unit 1) (value "ANT") (footprint "AD8129 Preamp Board:WirePad_3_0.8_1.5")
     )
     (path "/e931ab96-5377-4628-8122-7934ffab892c"
-      (reference "J2") (unit 1) (value "TUNE") (footprint "")
+      (reference "J2") (unit 1) (value "TUNE") (footprint "AD8129 Preamp Board:WirePad_1_0.8_1.5")
     )
     (path "/45c4b5cd-ee34-40a1-ad17-465c5c808423"
       (reference "J3") (unit 1) (value "TRX") (footprint "")
@@ -2552,7 +2552,7 @@
       (reference "L2") (unit 1) (value "220uH") (footprint "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder")
     )
     (path "/8146b11a-fccb-48a7-bcaa-9e1b77e1c86b"
-      (reference "L3") (unit 1) (value "1mH") (footprint "")
+      (reference "L3") (unit 1) (value "1mH") (footprint "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder")
     )
     (path "/4886c859-4e3e-44ea-8304-93581e52b72f"
       (reference "L4") (unit 1) (value "220uH") (footprint "AD8129 Preamp Board:L_1812_4532Metric_Pad1.30x3.40mm_HandSolder")
