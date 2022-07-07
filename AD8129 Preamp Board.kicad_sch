@@ -1530,7 +1530,7 @@
     (uuid ff0855f1-bd45-483a-b5cb-0edeb8614bda)
   )
 
-  (text "Adjust R4, R5 for\na desired Q, match\nwithin 0.1% or better.\n"
+  (text "Adjust R4, R5 for\na desired Q, match\nwithin 0.1%.\n"
     (at 114.935 60.325 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 07b19af0-c067-4314-a5a6-ed9fd5b1c2ab)
@@ -1539,7 +1539,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8afd603f-6cf3-4ac2-b4fe-736af9e815eb)
   )
-  (text "R4, R5 set gain\nGain = 1 + Rf/Rg =\n= 1 + R7/R6" (at 147.32 116.205 0)
+  (text "R7, R6 set gain\nGain = 1 + Rf/Rg =\n= 1 + R7/R6" (at 147.32 116.205 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8d3c585c-6454-436d-b49c-eca1e0eb1b98)
   )
