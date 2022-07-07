@@ -832,8 +832,7 @@
       (net 4 "SHLD") (pinfunction "Ext") (pintype "passive") (tstamp c0ced441-778b-4b25-99e5-1be591880916))
     (pad "2" smd rect (at -2.825 0 90) (size 1.35 4.2) (layers "B.Cu" "B.Paste" "B.Mask")
       (net 4 "SHLD") (pinfunction "Ext") (pintype "passive") (tstamp cb2cffc9-24ef-49a0-8fb1-1fc9023d54a2))
-    (pad "e" smd rect (at 2.825 0 90) (size 1.35 4.2) (layers "F.Cu" "F.Paste" "F.Mask")
-      (net 4 "SHLD") (pinfunction "Ext") (pintype "passive") (tstamp 7f816bf5-bee6-4ace-bd0a-ea05af29c178))
+    (pad "e" smd rect (at 2.825 0 90) (size 1.35 4.2) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 7f816bf5-bee6-4ace-bd0a-ea05af29c178))
     (model "${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/SMA_Samtec_SMA-J-P-X-ST-EM1_EdgeMount.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
