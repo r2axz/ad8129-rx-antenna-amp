@@ -5,8 +5,8 @@
   (paper "A4")
 
   (title_block
-    (title "AD8129 Preamp Board")
-    (date "2022-07-06")
+    (title "AD8129 RX Antenna Amp")
+    (date "2022-07-07")
     (rev "1")
   )
 
