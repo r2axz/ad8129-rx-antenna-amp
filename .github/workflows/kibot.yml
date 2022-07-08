@@ -8,20 +8,20 @@ on:
   workflow_dispatch:
   push:
     paths:
-    - "pcb/*.kicad_sch"
-    - "pcb/*.kicad_pcb"
-    - "pcb/*.kicad_pro"
+    - "*.kicad_sch"
+    - "*.kicad_pcb"
+    - "*.kicad_pro"
     - "**/*kibot.yml"
   pull_request:
     paths:
-    - "pcb/*.kicad_sch"
-    - "pcb/*.kicad_pcb"
-    - "pcb/*.kicad_pro"
+    - "*.kicad_sch"
+    - "*.kicad_pcb"
+    - "*.kicad_pro"
     - "**/*kibot.yml"
 
 env:
-  schema: "pcb/*.kicad_sch"
-  board: "pcb/*.kicad_pcb"
+  schema: "*.kicad_sch"
+  board: "*.kicad_pcb"
   dir: .
 
 jobs:
