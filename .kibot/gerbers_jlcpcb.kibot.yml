@@ -1,25 +1,3 @@
-# MIT License
-
-# Copyright (c) 2021 Neil Enns
-
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
 # This KiBot script generates gerbers, drill, bom, and position files for submitting
 # two layer boards to JLCPCB.
 variants:
@@ -86,10 +64,10 @@ filters:
       - ["^RP2040-QFN-56", 270]
 
 outputs:
-  - name: JLCPCB_gerbers
+  - name: gerbers_jlcpcb.gbr
     comment: Gerbers - JLCPCB
     type: gerber
-    dir: JLCPCB
+    dir: gerbers/jlcpcb
     options: &gerber_options
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
@@ -107,8 +85,7 @@ outputs:
       line_width: 0.1
       subtract_mask_from_silk: true
     layers:
-      - F.Cu
-      - B.Cu
+      - copper
       - F.SilkS
       - B.SilkS
       - F.Mask
@@ -118,23 +95,23 @@ outputs:
   - name: JLCPCB_drill
     comment: Drill - JLCPCB
     type: excellon
-    dir: JLCPCB
+    dir: gerbers/jlcpcb
     options:
       pth_and_npth_single_file: false
       pth_id: "PTH"
       npth_id: "NPTH"
       metric_units: false
 
-  - name: JLCPCB_position
+  - name: 'https://jlcpcb.com/'
     comment: "Pick and place - JLCPCB"
     type: position
-    dir: JLCPCB
+    dir: gerbers/jlcpcb
     options:
       variant: rotated
-      output: "%f_cpl_jlc.%x"
+      output: "%f_cpl.%x"
       format: CSV
       units: millimeters
-      separate_files_for_front_and_back: false
+      separate_files_for_front_and_back: true
       only_smd: true
       columns:
         - id: Ref
@@ -153,9 +130,9 @@ outputs:
   - name: JLCPCB_bom
     comment: "BOM - JLCPCB"
     type: bom
-    dir: JLCPCB
+    dir: gerbers/jlcpcb
     options:
-      output: "%f_%i_jlc.%x"
+      output: "%f-%i-%r.%x"
       exclude_filter: only_jlc_parts
       ref_separator: ","
       columns:
@@ -170,14 +147,3 @@ outputs:
         hide_pcb_info: true
         hide_stats_info: true
         quote_all: true
-
-  - name: JLCPCB
-    comment: "Gerber and drill zip - JLCPCB"
-    type: compress
-    dir: JLCPCB
-    options:
-      files:
-        - from_output: JLCPCB_gerbers
-          dest: /
-        - from_output: JLCPCB_drill
-          dest: /
