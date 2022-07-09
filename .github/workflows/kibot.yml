@@ -6,12 +6,6 @@ name: KiBot
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-    - "*.kicad_sch"
-    - "*.kicad_pcb"
-    - "*.kicad_pro"
-    - "**/*kibot.yml"
   pull_request:
     paths:
     - "*.kicad_sch"
