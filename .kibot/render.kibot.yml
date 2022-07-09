@@ -7,6 +7,7 @@ outputs:
       download: true
       output: '%f-top.%x'
       ray_tracing: true
+      wait_render: -600
       view: top
 
   - name: 'kicad 3d view bottom'
@@ -16,6 +17,7 @@ outputs:
       download: true
       output: '%f-bottom.%x'
       ray_tracing: true
+      wait_render: -600
       view: bottom
 
   - name: 'kicad 3d view front'
@@ -25,6 +27,7 @@ outputs:
       download: true
       output: '%f-front.%x'
       ray_tracing: true
+      wait_render: -600
       view: front
 
   - name: 'kicad 3d view rear'
@@ -34,6 +37,7 @@ outputs:
       download: true
       output: '%f-rear.%x'
       ray_tracing: true
+      wait_render: -600
       view: rear
 
   - name: 'kicad 3d view right'
@@ -43,6 +47,7 @@ outputs:
       download: true
       output: '%f-right.%x'
       ray_tracing: true
+      wait_render: -600
       view: right
 
   - name: 'kicad 3d view left'
@@ -52,4 +57,5 @@ outputs:
       download: true
       output: '%f-left.%x'
       ray_tracing: true
+      wait_render: -600
       view: left
