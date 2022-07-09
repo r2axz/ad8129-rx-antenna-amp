@@ -112,7 +112,7 @@ jobs:
       - name: run kibot
         run: | 
           kibot -c kibot.yml -e ${{env.schema}} -b ${{env.board}} -d ${{env.dir}} -s run_erc,run_drc -v \
-            board_black_top.png board_black_bottom.png
+            board_black_top.png board_black_bottom.png 'kicad 3d view top'
       - uses: actions/upload-artifact@v2
         if: ${{success()}}
         with:
