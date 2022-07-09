@@ -1,8 +1,8 @@
 outputs:
-  - name: 'board_black_top.svg'
+  - name: 'board_black_top.png'
     comment: 'https://github.com/yaqwsx/PcbDraw'
     type: 'pcbdraw'
-    dir: 'img/pcb'
+    dir: 'img'
     options:
       # [boolean=false] render the bottom side of the board (default is top side)
       bottom: false
@@ -12,7 +12,7 @@ outputs:
       # [number=300] [10,1200] dots per inch (resolution) of the generated image
       dpi: 300
       # [string='svg'] [svg,png,jpg] output format. Only used if no `output` is specified
-      format: 'svg'
+      format: 'png'
       # [list(string)=[]] list of components to highlight
       highlight: []
       # [list(string)=[]] list of libraries
@@ -42,7 +42,7 @@ outputs:
   - name: 'board_black_bottom.svg'
     comment: 'https://github.com/yaqwsx/PcbDraw'
     type: 'pcbdraw'
-    dir: 'img/pcb'
+    dir: 'img'
     options:
       # [boolean=false] render the bottom side of the board (default is top side)
       bottom: true
@@ -52,7 +52,7 @@ outputs:
       # [number=300] [10,1200] dots per inch (resolution) of the generated image
       dpi: 300
       # [string='svg'] [svg,png,jpg] output format. Only used if no `output` is specified
-      format: 'svg'
+      format: 'png'
       # [list(string)=[]] list of components to highlight
       highlight: []
       # [list(string)=[]] list of libraries
