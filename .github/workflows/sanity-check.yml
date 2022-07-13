@@ -15,6 +15,7 @@ env:
 
 jobs:
   sanity-check:
+    name: Sanity Check (ERC & DRC)
     runs-on: ubuntu-latest
     container:
       image: setsoft/kicad_auto:ki6
