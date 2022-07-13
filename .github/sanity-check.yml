@@ -1,0 +1,21 @@
+name: Sanity Check
+
+on:
+  pull-request:
+    branches: [main]
+
+env:
+  schematics: "*.kicad_sch"
+  board: "*.kicad_pcb"
+  dir: .
+
+jobs:
+  Sanity Check:
+    runs-on: ubuntu-latest
+    container:
+      image: setsoft/kicad_auto:ki6
+    steps:
+      - uses: actions/checkout@v2
+      - name: run kibot
+        run: | 
+          kibot -c kibot.yml -e ${{env.schematics}} -b ${{env.board}} -d ${{env.dir}} -s run_erc, run_drc -v -i
