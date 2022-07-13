@@ -1,8 +1,12 @@
 name: Sanity Check
 
 on:
-  pull-request:
-    branches: [main]
+  pull_request:
+    paths:
+    - "*.kicad_sch"
+    - "*.kicad_pcb"
+    - "*.kicad_pro"
+    - ".kibot.yml"
 
 env:
   schematics: "*.kicad_sch"
