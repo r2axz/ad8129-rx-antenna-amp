@@ -1,4 +1,4 @@
-# ad8129 RX Antenna Amp
+# AD8129 RX Antenna Amp
 
 This repository offers a KiCad project for DL2KQ high CMRR receiving antenna
 amplifier. The amplifier is designed to work with magnetic loop, flag, ferrite
