@@ -14,7 +14,7 @@ env:
   dir: .
 
 jobs:
-  Sanity Check:
+  sanity-check:
     runs-on: ubuntu-latest
     container:
       image: setsoft/kicad_auto:ki6
