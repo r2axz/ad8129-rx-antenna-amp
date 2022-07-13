@@ -1,0 +1,36 @@
+name: Sanity Check
+
+on:
+  pull_request:
+    paths:
+    - "*.kicad_sch"
+    - "*.kicad_pcb"
+    - "*.kicad_pro"
+    - ".kibot.yml"
+
+env:
+  schematics: "*.kicad_sch"
+  board: "*.kicad_pcb"
+  dir: .
+
+jobs:
+  erc:
+    name: ERC
+    runs-on: ubuntu-latest
+    container:
+      image: setsoft/kicad_auto:ki6
+    steps:
+      - uses: actions/checkout@v2
+      - name: run kibot
+        run: | 
+          kibot -c .kibot.yml -e ${{env.schematics}} -b ${{env.board}} -d ${{env.dir}} -s run_erc -v -i
+  drc:
+    name: DRC
+    runs-on: ubuntu-latest
+    container:
+      image: setsoft/kicad_auto:ki6
+    steps:
+      - uses: actions/checkout@v2
+      - name: run kibot
+        run: | 
+          kibot -c .kibot.yml -e ${{env.schematics}} -b ${{env.board}} -d ${{env.dir}} -s run_drc -v -i
