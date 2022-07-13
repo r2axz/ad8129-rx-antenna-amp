@@ -344,12 +344,12 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "AD8129 Preamp Board"
+      "ad8129-rx-antenna-amp"
     ],
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "AD8129 Preamp Board.kicad_pro",
+    "filename": "ad8129-rx-antenna-amp.kicad_pro",
     "version": 1
   },
   "net_settings": {
